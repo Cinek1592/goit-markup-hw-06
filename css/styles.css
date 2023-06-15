@@ -629,3 +629,19 @@ h5 {
   color: #fff;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 }
+/* modal*/
+
+.modal-form {
+}
+.modal-heading {
+  font-family: Roboto;
+  font-style: Bold;
+  font-size: 20px;
+  line-height: 23px;
+  line-height: 100%;
+  align: Center;
+  vertical-align: Top;
+  letter-spacing: 3%;
+  fill: Solid;
+  color: #212121;
+}

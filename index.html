@@ -446,6 +446,22 @@
               </li>
             </ul>
           </div>
+          <div class="newsletter-mail">
+            <form name="newsletter">
+              <label class="newsletter-label"> Zapisz się do newslettera</label>
+              <input
+                class="newsletter-input"
+                placeholder="E-mail"
+                type="email"
+              />
+              <button type="submit" class="newsletter-button">
+                Zapisz się
+                <svg class="newsletter-icon" width="24px" height="24px">
+                  <use href="./images/icons.svg#icon-icon-send"></use>
+                </svg>
+              </button>
+            </form>
+          </div>
         </div>
       </div>
     </footer>
@@ -453,6 +469,11 @@
       <div class="modal is-hidden" data-modal>
         <div class="modal-window">
           <button class="modal-close-button" data-modal-close>x</button>
+          <div class="modal-form">
+            <h3 class="modal-heading">
+              Zostaw swoje dane w formularzu poniżej
+            </h3>
+          </div>
         </div>
       </div>
       <script src="js/modal.js"></script>
