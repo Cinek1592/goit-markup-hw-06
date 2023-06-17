@@ -474,7 +474,7 @@
               Zostaw swoje dane w formularzu poniżej
             </h3>
             <form>
-              <label>
+              <label class="label">
                 <span class="text-label">Imie</span>
                 <div class="label-div">
                   <svg class="icon-modal" width="18px" height="18px">
@@ -485,7 +485,7 @@
                   <input class="input-modal" />
                 </div>
               </label>
-              <label>
+              <label class="label">
                 <span class="text-label">Telefon</span>
                 <div class="label-div">
                   <svg class="icon-modal" width="18px" height="18px">
@@ -496,7 +496,7 @@
                   <input class="input-modal" />
                 </div>
               </label>
-              <label>
+              <label class="label">
                 <span class="text-label">Email</span>
                 <div class="label-div">
                   <svg class="icon-modal" width="18px" height="18px">
@@ -512,12 +512,34 @@
                 <div class="textarea-div">
                   <textarea
                     class="modal-textarea"
-                    style="width: 448px; height: 120px"
                     name="comment"
                     rows="5"
                     placeholder="Wprowadź tekst"
                   >
                   </textarea>
+                  <label>
+                    <input class="modal-checkbox" type="checkbox" />
+                    <div class="checkbox-vector-none">
+                      <svg width="16px" height="15px">
+                        <use href="./images/icons.svg#icon-Vector-1"></use>
+                      </svg>
+                    </div>
+                    <div class="checkbox-vector-yes">
+                      <svg width="16px" height="15px">
+                        <use href="./images/icons.svg#icon-icon-check-1"></use>
+                      </svg>
+                    </div>
+                    <span class="modal-declaration"
+                      >Oświadczam iż akceptuję
+                      <a class="declaration-link" href="#">Regulamin</a> i
+                      <a class="declaration-link" href="#"
+                        >Politykę Prywatności</a
+                      >.</span
+                    >
+                  </label>
+                  <button class="modal-send-button" type="submit">
+                    Wyślij
+                  </button>
                 </div>
               </label>
             </form>

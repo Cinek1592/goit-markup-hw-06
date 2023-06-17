@@ -690,7 +690,80 @@ h5 {
 }
 .modal-textarea {
   margin: 10px auto 10px 0;
-  width: 366px;
-  height: 20px;
+  width: 416px;
   border: none;
+  resize: none;
+}
+.modal-textarea:focus .modal-textarea:hover {
+  border: none;
+}
+
+.modal-textarea::placeholder {
+  color: rgba(117, 117, 117, 0.5);
+}
+.label {
+  border-color: #2196f3;
+}
+.modal-checkbox {
+  position: relative;
+  top: 20px;
+  width: 16px;
+  height: 15px;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+.checkbox-vector-none {
+  position: relative;
+  left: 14px;
+  top: 20px;
+}
+.checkbox-vector-yes {
+  fill: #fff;
+  background-color: #2196f3;
+  width: 16px;
+  height: 17px;
+  border-radius: 4px;
+  position: relative;
+  left: 14px;
+  top: 0;
+  bottom: 19px;
+  visibility: hidden;
+}
+.modal-checkbox:checked ~ .checkbox-vector-yes {
+  visibility: visible;
+}
+.modal-checkbox:checked + .checkbox-vector-none {
+  visibility: hidden;
+}
+
+.modal-declaration {
+  position: relative;
+  left: 39px;
+  top: -20px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+.modal-send-button {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  background-color: #2196f3;
+  width: 200px;
+  height: 50px;
+  border: none;
+  border-radius: 4px;
+  margin-left: 124px;
+  top: 10px;
+  position: relative;
+  bottom: 20px;
 }
