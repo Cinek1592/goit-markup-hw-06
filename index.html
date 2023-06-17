@@ -468,13 +468,18 @@
     <div class="container">
       <div class="modal is-hidden" data-modal>
         <div class="modal-window">
-          <button class="modal-close-button" data-modal-close>x</button>
+          <button class="modal-close-button" data-modal-close>
+            <svg class="modal-close" width="18px" height="18px">
+              <use href="./images/icons.svg#icon-close-black-18dp-1"></use>
+            </svg>
+          </button>
+
           <div class="modal-form">
             <h3 class="modal-heading">
               Zostaw swoje dane w formularzu poniżej
             </h3>
             <form>
-              <label class="label">
+              <label class="label" name="name">
                 <span class="text-label">Imie</span>
                 <div class="label-div">
                   <svg class="icon-modal" width="18px" height="18px">
@@ -485,7 +490,7 @@
                   <input class="input-modal" />
                 </div>
               </label>
-              <label class="label">
+              <label class="label" name="phone">
                 <span class="text-label">Telefon</span>
                 <div class="label-div">
                   <svg class="icon-modal" width="18px" height="18px">
@@ -496,7 +501,7 @@
                   <input class="input-modal" />
                 </div>
               </label>
-              <label class="label">
+              <label class="label" name="mail">
                 <span class="text-label">Email</span>
                 <div class="label-div">
                   <svg class="icon-modal" width="18px" height="18px">

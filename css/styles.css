@@ -633,6 +633,11 @@ h5 {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 }
 /* modal*/
+.modal-close {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
 
 .modal-form {
   width: 528px;
@@ -677,8 +682,8 @@ h5 {
 .input-modal {
   width: 366px;
   height: 20px;
-  border: none;
   margin-left: 12px;
+  border-color: transparent;
 }
 .textarea-label {
 }
@@ -737,6 +742,14 @@ h5 {
   visibility: hidden;
 }
 
+.label:focus-within .label-div,
+.label:focus-within .textarea-div {
+  border-color: #2196f3;
+}
+.label:focus-within .icon-modal {
+  fill: #2196f3;
+}
+
 .modal-declaration {
   position: relative;
   left: 39px;
@@ -749,6 +762,13 @@ h5 {
   letter-spacing: 0.03em;
   color: #757575;
 }
+.declaration-link,
+.declaration-link:hover,
+.declaration-link:focus,
+.declaration-link:visited {
+  color: #2196f3;
+}
+
 .modal-send-button {
   font-family: "Roboto";
   font-style: normal;
