@@ -22,6 +22,7 @@
 .header-link:hover,
 .header-link:focus {
   color: #2196f3;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contact {
   color: #757575;
@@ -36,6 +37,7 @@
 .contact-footer:hover,
 .contact-footer:focus {
   color: #2196f3;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button-pos {
   padding: 30px 700px 200px 700px;
@@ -163,6 +165,7 @@
   cursor: pointer;
   background-color: #2196f3;
   -webkit-text-fill-color: #ffffff;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .li-tittle {
   font-weight: 700;
@@ -291,6 +294,7 @@
   box-shadow: 0px 2px 2px 0px #0000001f;
   box-shadow: 0px 1px 2px 0px #00000014;
   box-shadow: 0px 3px 1px 0px #0000001a;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .port-photo-li {
   display: flex;
@@ -313,6 +317,7 @@
 .li-photo-port:hover {
   cursor: pointer;
   border-radius: 6px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /*icons*/
 .envelope {
@@ -352,6 +357,7 @@
   border-width: 44px;
   border-radius: 50%;
   background-color: #2196f3;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .heading-3 {
   font-weight: 700;
@@ -394,6 +400,7 @@
   cursor: pointer;
   fill: #2196f3;
   border-color: #2196f3;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-link {
   fill: #afb1b8;
@@ -429,6 +436,7 @@
   border-radius: 50%;
   background-color: #2196f3;
   fill: #ffffff;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-link:hover,
@@ -684,23 +692,21 @@ h5 {
   height: 20px;
   margin-left: 12px;
   border-color: transparent;
+  outline: none;
 }
 .textarea-div {
   width: 448px;
   height: 120px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 }
 .modal-textarea {
   margin: 10px auto 10px 0;
-  width: 416px;
-  border: none;
+  width: 448px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
   resize: none;
+  outline: none;
 }
-.modal-textarea:focus .modal-textarea:hover {
-  border: none;
-}
-
 .modal-textarea::placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
@@ -741,8 +747,10 @@ h5 {
 }
 
 .label:focus-within .label-div,
-.label:focus-within .textarea-div {
+.label:focus-within .modal-textarea:focus,
+.modal-textarea:focus-visible {
   border-color: #2196f3;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .label:focus-within .icon-modal {
   fill: #2196f3;
