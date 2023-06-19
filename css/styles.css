@@ -90,7 +90,7 @@
 
 .address-font {
   font-style: normal;
-  padding: 0px 0 60px 15px;
+  padding-right: 15px;
   font-size: 14px;
   line-height: 1.7;
 }
@@ -148,7 +148,7 @@
   line-height: 1.19;
   color: #000000;
   text-decoration: none;
-  padding: 60px 0 20px 15px;
+  padding: 60px 0 20px 0;
 }
 .footer-studio {
   color: #ffffff;
@@ -419,6 +419,7 @@
 }
 .footer-main {
   display: flex;
+  max-height: 252px;
 }
 .social-links-footer {
   max-width: 44px;
